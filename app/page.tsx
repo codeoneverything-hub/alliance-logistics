@@ -64,7 +64,6 @@ export default function Home() {
 
   return (
     <main className="overflow-x-hidden bg-[#f7f7f5] text-[#111]">
-
       {/* ================= HEADER ================= */}
 
       <header
@@ -75,7 +74,6 @@ export default function Home() {
         }`}
       >
         <div className="mx-auto flex h-[82px] max-w-[1400px] items-center justify-between px-6 md:px-10">
-
           {/* LOGO */}
 
           <Link
@@ -84,7 +82,7 @@ export default function Home() {
             className="relative z-50 flex items-center"
           >
             <Image
-              src="/images/Logo.jpg"
+              src="/images/logo.jpg"
               alt="Alliance Express Logistics"
               width={160}
               height={55}
@@ -166,7 +164,6 @@ export default function Home() {
               className="border-t border-black/5 bg-white md:hidden"
             >
               <nav className="flex flex-col px-6 py-8">
-
                 {navItems.map((item, index) => (
                   <motion.a
                     key={item.href}
@@ -182,18 +179,15 @@ export default function Home() {
                     {item.label}
                   </motion.a>
                 ))}
-
               </nav>
             </motion.div>
           )}
         </AnimatePresence>
       </header>
 
-
       {/* ================= HERO ================= */}
 
       <section className="relative mt-[82px] h-[calc(100vh-82px)] min-h-[650px] overflow-hidden bg-black">
-
         <motion.video
           initial={{ scale: 1.08 }}
           animate={{ scale: 1 }}
@@ -216,11 +210,8 @@ export default function Home() {
         <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
 
         <div className="absolute inset-0 flex items-end">
-
           <div className="mx-auto w-full max-w-[1400px] px-6 pb-16 md:px-10 md:pb-24">
-
             <div className="max-w-4xl">
-
               <motion.p
                 initial={{ opacity: 0, y: 25 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -283,7 +274,6 @@ export default function Home() {
                   CONTACT US
                 </a>
               </motion.div>
-
             </div>
           </div>
         </div>
@@ -296,6 +286,7 @@ export default function Home() {
           className="absolute bottom-8 right-8 hidden items-center gap-3 text-xs uppercase tracking-[0.2em] text-white/70 md:flex"
         >
           Scroll
+
           <motion.span
             animate={{ width: ["30px", "48px", "30px"] }}
             transition={{
@@ -307,7 +298,6 @@ export default function Home() {
         </motion.a>
       </section>
 
-
       {/* ================= ABOUT ================= */}
 
       <section
@@ -315,10 +305,8 @@ export default function Home() {
         className="scroll-mt-20 px-6 py-24 md:px-10 md:py-32"
       >
         <div className="mx-auto grid max-w-[1200px] items-center gap-16 md:grid-cols-[0.9fr_1.1fr] md:gap-20">
-
           <Reveal direction="left">
             <div>
-
               <p className="mb-5 text-sm font-semibold uppercase tracking-[0.25em] text-[#d71920]">
                 Who we are
               </p>
@@ -341,7 +329,6 @@ export default function Home() {
               </p>
 
               <div className="mt-10">
-
                 <a
                   href="#services"
                   className="group inline-flex items-center gap-4 text-sm font-semibold uppercase tracking-[0.15em]"
@@ -354,11 +341,9 @@ export default function Home() {
                     →
                   </span>
                 </a>
-
               </div>
             </div>
           </Reveal>
-
 
           <Reveal direction="right" delay={0.15}>
             <motion.div
@@ -375,10 +360,8 @@ export default function Home() {
               />
             </motion.div>
           </Reveal>
-
         </div>
       </section>
-
 
       {/* ================= SERVICES ================= */}
 
@@ -387,10 +370,8 @@ export default function Home() {
         className="scroll-mt-20 bg-[#111] px-6 py-24 text-white md:px-10 md:py-32"
       >
         <div className="mx-auto max-w-[1200px]">
-
           <Reveal>
             <div className="mb-16 max-w-3xl">
-
               <p className="mb-5 text-sm font-semibold uppercase tracking-[0.25em] text-[#e31b23]">
                 What we do
               </p>
@@ -402,17 +383,13 @@ export default function Home() {
                   your journey.
                 </span>
               </h2>
-
             </div>
           </Reveal>
-
 
           {/* SERVICE 01 */}
 
           <Reveal direction="left">
-
             <div className="grid items-center gap-12 border-t border-white/10 py-14 md:grid-cols-[0.9fr_1.1fr] md:py-20">
-
               <motion.div
                 whileHover={{ y: -8 }}
                 className="group overflow-hidden rounded-2xl bg-[#1c1c1c]"
@@ -427,7 +404,6 @@ export default function Home() {
               </motion.div>
 
               <div className="md:pl-8">
-
                 <span className="text-sm text-white/30">
                   01
                 </span>
@@ -451,22 +427,15 @@ export default function Home() {
                 >
                   Learn more →
                 </a>
-
               </div>
-
             </div>
-
           </Reveal>
-
 
           {/* SERVICE 02 */}
 
           <Reveal direction="right">
-
             <div className="grid items-center gap-12 border-t border-white/10 py-14 md:grid-cols-[1.1fr_0.9fr] md:py-20">
-
               <div className="order-2 md:order-1 md:pr-8">
-
                 <span className="text-sm text-white/30">
                   02
                 </span>
@@ -489,7 +458,6 @@ export default function Home() {
                 >
                   Learn more →
                 </a>
-
               </div>
 
               <motion.div
@@ -504,18 +472,13 @@ export default function Home() {
                   className="h-[320px] w-full object-contain transition duration-700 group-hover:scale-105 md:h-[400px]"
                 />
               </motion.div>
-
             </div>
-
           </Reveal>
-
 
           {/* SERVICE 03 */}
 
           <Reveal direction="left">
-
             <div className="grid items-center gap-12 border-t border-white/10 py-14 md:grid-cols-[0.9fr_1.1fr] md:py-20">
-
               <motion.div
                 whileHover={{ y: -8 }}
                 className="group overflow-hidden rounded-2xl bg-[#1c1c1c]"
@@ -530,7 +493,6 @@ export default function Home() {
               </motion.div>
 
               <div className="md:pl-8">
-
                 <span className="text-sm text-white/30">
                   03
                 </span>
@@ -553,21 +515,15 @@ export default function Home() {
                 >
                   Learn more →
                 </a>
-
               </div>
-
             </div>
-
           </Reveal>
-
         </div>
       </section>
-
 
       {/* ================= FEATURE IMAGE ================= */}
 
       <section className="relative overflow-hidden">
-
         <motion.div
           initial={{ scale: 1.08 }}
           whileInView={{ scale: 1 }}
@@ -578,22 +534,19 @@ export default function Home() {
           }}
         >
           <Image
-  src="/images/a5.jpg"
-  alt="Alliance transportation"
-  width={1800}
-  height={1000}
-  className="h-auto w-full object-contain md:h-[600px]"
+            src="/images/a5.jpg"
+            alt="Alliance transportation"
+            width={1800}
+            height={1000}
+            className="h-auto w-full object-contain md:h-[600px]"
           />
         </motion.div>
 
         <div className="absolute inset-0 bg-black/35" />
 
         <div className="absolute inset-0 flex items-center justify-center px-6 text-center">
-
           <Reveal>
-
             <div>
-
               <p className="mb-5 text-sm font-semibold uppercase tracking-[0.3em] text-white/80">
                 The journey matters
               </p>
@@ -601,15 +554,10 @@ export default function Home() {
               <h2 className="text-5xl font-semibold tracking-[-0.04em] text-white md:text-7xl">
                 Built to move.
               </h2>
-
             </div>
-
           </Reveal>
-
         </div>
-
       </section>
-
 
       {/* ================= WHY US ================= */}
 
@@ -618,13 +566,9 @@ export default function Home() {
         className="scroll-mt-20 px-6 py-24 md:px-10 md:py-32"
       >
         <div className="mx-auto max-w-[1200px]">
-
           <div className="grid gap-16 md:grid-cols-2">
-
             <Reveal direction="left">
-
               <div>
-
                 <p className="mb-5 text-sm font-semibold uppercase tracking-[0.25em] text-[#d71920]">
                   Why choose us
                 </p>
@@ -636,14 +580,10 @@ export default function Home() {
                     getting there.
                   </span>
                 </h2>
-
               </div>
-
             </Reveal>
 
-
             <div className="grid grid-cols-1 sm:grid-cols-2">
-
               {[
                 {
                   number: "01",
@@ -666,12 +606,10 @@ export default function Home() {
                   text: "Focused on creating smooth transportation experiences.",
                 },
               ].map((item, index) => (
-
                 <Reveal
                   key={item.number}
                   delay={index * 0.08}
                 >
-
                   <motion.div
                     whileHover={{ y: -5 }}
                     className={`border-t border-black/10 py-8 ${
@@ -680,7 +618,6 @@ export default function Home() {
                         : "sm:pl-8"
                     }`}
                   >
-
                     <span className="text-3xl font-semibold">
                       {item.number}
                     </span>
@@ -692,20 +629,13 @@ export default function Home() {
                     <p className="mt-3 text-sm leading-7 text-black/50">
                       {item.text}
                     </p>
-
                   </motion.div>
-
                 </Reveal>
-
               ))}
-
             </div>
-
           </div>
-
         </div>
       </section>
-
 
       {/* ================= CONTACT ================= */}
 
@@ -713,98 +643,86 @@ export default function Home() {
         id="contact"
         className="relative scroll-mt-20 overflow-hidden bg-[#d71920] px-6 py-28 text-white md:px-10 md:py-36"
       >
-
         <div className="mx-auto max-w-[1200px]">
-
           <Reveal>
-
             <p className="mb-6 text-sm font-semibold uppercase tracking-[0.3em] text-white/70">
               Start a conversation
             </p>
-
           </Reveal>
 
           <Reveal delay={0.1}>
-
             <h2 className="max-w-5xl text-5xl font-semibold leading-[0.95] tracking-[-0.04em] md:text-8xl">
               Let's move
               <br />
               forward.
             </h2>
-            </Reveal>
-<Reveal delay={0.2}>
-  <p className="mt-8 max-w-xl text-lg leading-8 text-white/80">
-    Looking for a transportation partner for your employees,
-    events or business? Let's talk about your requirements.
-  </p>
-</Reveal>
+          </Reveal>
 
-<Reveal delay={0.3}>
-  <div className="mt-10 flex flex-wrap gap-4">
+          <Reveal delay={0.2}>
+            <p className="mt-8 max-w-xl text-lg leading-8 text-white/80">
+              Looking for a transportation partner for your employees,
+              events or business? Let's talk about your requirements.
+            </p>
+          </Reveal>
 
-    <motion.a
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.97 }}
-      href="mailto:admin@alliance.com"
-      className="inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-black"
-    >
-      EMAIL US →
-    </motion.a>
+          <Reveal delay={0.3}>
+            <div className="mt-10 flex flex-wrap gap-4">
+              <motion.a
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.97 }}
+                href="mailto:admin@alliance.com"
+                className="inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-black"
+              >
+                EMAIL US →
+              </motion.a>
 
-    <motion.a
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.97 }}
-      href="tel:+911234567890"
-      className="inline-flex rounded-full border border-white/50 bg-white/10 px-8 py-4 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white hover:text-black"
-    >
-      +91 12345 67890
-    </motion.a>
-
-  </div>
-</Reveal>
-
+              <motion.a
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.97 }}
+                href="tel:+911234567890"
+                className="inline-flex rounded-full border border-white/50 bg-white/10 px-8 py-4 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white hover:text-black"
+              >
+                +91 12345 67890
+              </motion.a>
+            </div>
+          </Reveal>
         </div>
-
       </section>
-
 
       {/* ================= FOOTER ================= */}
 
       <footer className="bg-[#111] px-6 py-10 text-white md:px-10">
-  <div className="mx-auto flex max-w-[1200px] flex-col justify-between gap-8 md:flex-row md:items-center">
+        <div className="mx-auto flex max-w-[1200px] flex-col justify-between gap-8 md:flex-row md:items-center">
+          <Image
+            src="/images/logo.jpg"
+            alt="Alliance Express Logistics"
+            width={140}
+            height={50}
+            className="h-auto max-h-10 w-auto object-contain"
+          />
 
-    <Image
-      src="/images/logo.jpg"
-      alt="Alliance Express Logistics"
-      width={140}
-      height={50}
-      className="h-auto max-h-10 w-auto object-contain"
-    />
+          <div className="flex flex-col gap-2 text-sm text-white/50 md:items-end">
+            <a
+              href="mailto:admin@alliance.com"
+              className="transition hover:text-white"
+            >
+              admin@alliance.com
+            </a>
 
-    <div className="flex flex-col gap-2 text-sm text-white/50 md:items-end">
-      <a
-        href="mailto:admin@alliance.com"
-        className="transition hover:text-white"
-      >
-        admin@alliance.com
-      </a>
+            <a
+              href="tel:+911234567890"
+              className="transition hover:text-white"
+            >
+              +91 12345 67890
+            </a>
 
-      <a
-        href="tel:+911234567890"
-        className="transition hover:text-white"
-      >
-        +91 12345 67890
-      </a>
-
-      <p className="mt-2 text-xs text-white/30">
-        © {new Date().getFullYear()} Alliance Express Logistics
-        Private Limited. All rights reserved.
-      </p>
-    </div>
-
-  </div>
-</footer>
-
+            <p className="mt-2 text-xs text-white/30">
+              © {new Date().getFullYear()} Alliance Express Logistics
+              Private Limited. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
