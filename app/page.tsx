@@ -84,7 +84,7 @@ export default function Home() {
             className="relative z-50 flex items-center"
           >
             <Image
-              src="/images/logo.jpg"
+              src="/images/Logo.jpg"
               alt="Alliance Express Logistics"
               width={160}
               height={55}
@@ -578,11 +578,11 @@ export default function Home() {
           }}
         >
           <Image
-            src="/images/a5.jpg"
-            alt="Alliance transportation"
-            width={1800}
-            height={1000}
-            className="h-[480px] w-full object-cover md:h-[600px]"
+  src="/images/a5.jpg"
+  alt="Alliance transportation"
+  width={1800}
+  height={1000}
+  className="h-auto w-full object-contain md:h-[600px]"
           />
         </motion.div>
 
